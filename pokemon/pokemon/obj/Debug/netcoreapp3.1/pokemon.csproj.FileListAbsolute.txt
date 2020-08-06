@@ -1,0 +1,4 @@
+C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.csprojAssemblyReference.cache
+C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfoInputs.cache
+C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfo.cs
