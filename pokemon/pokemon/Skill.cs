@@ -6,6 +6,9 @@ namespace pokemon
 {
     class Skill
     {
-
+        private string name;
+        private enum affinity{};
+        private enum type{};
+        private float Power;
     }
 }

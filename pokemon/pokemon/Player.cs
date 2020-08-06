@@ -9,10 +9,10 @@ namespace pokemon
         private Queue<Critter> team;
         private string playerName;
         
-        public string PlayerName   // property
+        private string PlayerName   // property
         {
-            get { return playerName; }   // get method
-            set { playerName = value; }  // set method
+            get => playerName;    // get method
+            set => playerName = value;   // set method
         }
     }
 }
