@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Soja\\source\\repos\\pokemon\\pokemon\\pokemon.csproj",
+      "projectUniqueName": "C:\\Users\\Soja\\Documents\\GitHub\\PokemonRep\\Pokemon\\pokemon\\pokemon\\pokemon.csproj",
       "projectName": "pokemon",
-      "projectPath": "C:\\Users\\Soja\\source\\repos\\pokemon\\pokemon\\pokemon.csproj",
+      "projectPath": "C:\\Users\\Soja\\Documents\\GitHub\\PokemonRep\\Pokemon\\pokemon\\pokemon\\pokemon.csproj",
       "packagesPath": "C:\\Users\\Soja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Soja\\source\\repos\\pokemon\\pokemon\\obj\\",
+      "outputPath": "C:\\Users\\Soja\\Documents\\GitHub\\PokemonRep\\Pokemon\\pokemon\\pokemon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Soja\\AppData\\Roaming\\NuGet\\NuGet.Config",
