@@ -6,13 +6,13 @@ namespace pokemon
 {
     class Player
     {
-        private Queue<Critter> team;
-        private string playerName;
-        
-        private string PlayerName   // property
+        public Queue<Critter> CritterTeam { get; private set; }
+        public string PlayerName { get; private set; }
+
+        public Player(string name, Queue<Critter>newCritterTeam)
         {
-            get => playerName;    // get method
-            set => playerName = value;   // set method
+            PlayerName = name;
+            CritterTeam = newCritterTeam;
         }
     }
 }

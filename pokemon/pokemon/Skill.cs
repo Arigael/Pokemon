@@ -1,22 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace pokemon
 {
-    class Skill
+    public class Skill
     {
-        private string Name;
-        private float Power;
+        public string Name { get; protected set; }
+        public float Power { get; protected set; }
 
-        private enum Type
-        {
-            AttackSkill,
-            SupportSkill
-        }
-
-        private Type skillType;
-        
+        public int Movimientos { get; protected set; }
 
         public enum Affinity 
         {
@@ -30,12 +24,9 @@ namespace pokemon
         
         private Affinity affinityType;
 
-        public Skill (string name, float power, Type type, Affinity affinity)
-        {
-            Name = name;
-            Power = power;
-            skillType = Type;
-            affinityType = affinity;
-        }
+        public Affinity AffinityType { get; protected set; }
+
+
+
     }
 }
