@@ -2,3 +2,16 @@ C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netc
 C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.csproj.CoreCompileInputs.cache
 C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfoInputs.cache
 C:\Users\Soja\Documents\GitHub\PokemonRep\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfo.cs
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.exe
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.deps.json
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.runtimeconfig.json
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.runtimeconfig.dev.json
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.dll
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\bin\Debug\netcoreapp3.1\pokemon.pdb
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.csprojAssemblyReference.cache
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfoInputs.cache
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.AssemblyInfo.cs
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.csproj.CoreCompileInputs.cache
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.dll
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.pdb
+C:\Users\juanf\Documents\GitHub\Pokemon\pokemon\pokemon\obj\Debug\netcoreapp3.1\pokemon.genruntimeconfig.cache

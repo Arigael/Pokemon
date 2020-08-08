@@ -27,13 +27,13 @@ namespace pokemon
             {
                 Power = 10;
             }
-            AffinityType = affinityType;
+            AffinitySkillType = affinityType;
         }
 
 
         private float AffinityMultiplier (Critter target, AtkSkill skill)
         {
-            switch (skill.AffinityType)
+            switch (skill.AffinitySkillType)
             {
                 case Affinity.Fire:
                     switch (target.AffinityType)
@@ -196,7 +196,7 @@ namespace pokemon
         {
             float dmgValue;
 
-            if (target != null)
+            if (target != null && target != caster)
             {
                 dmgValue = ((caster.BaseAttack + additionalAttack) + Power) * AffinityMultiplier(target, this) ;
                 return dmgValue;

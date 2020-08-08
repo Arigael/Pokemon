@@ -6,68 +6,56 @@ namespace pokemon
 {
     class Control
     {
-
-        public float additionalAtk, additionalDef, spdDown;
+        public float additionalAtk1, additionalDef1, spdDown1, currentCritterHp1;
+        public float additionalAtk2, additionalDef2, spdDown2, currentCritterHp2;
+        public float dmgDealt;
+        public Critter currentCritterPlayer1, currentCritterPlayer2;
         public void StartCombat(Player player1, Player player2)
         {
             Console.WriteLine("Se ha iniciado un combate entre el jugador {0} y el jugador {1}", player1.PlayerName + player2.PlayerName);
 
-            Turn1(player1, player2);
+            
+            Combat(Turn1(player1,player2)[0], Turn1(player1, player2)[1]);
         }
 
         public void Combat (Player FirstPlayer, Player SecondPlayer)
         {
+            if (FirstPlayer.CritterTeam.Count != 0)
+            {
+                //llamar aqui el turno del critter en cuestion, pedir el input para llenar los parametros del metodo CritterTurn();
+                currentCritterPlayer1 = FirstPlayer.CritterTeam.Peek();
+                currentCritterHp1 = currentCritterPlayer1.HP;
 
+                // Asi el critter del jugador 1 atacaria al critter del jugador 2
+                currentCritterHp2 = CritterTurn(SecondPlayer.CritterTeam.Peek(),FirstPlayer.CritterTeam.Peek(),1,dmgDealt);
+
+                //crear un switch en donde se defina el tipo de acciones que pueda llevar acabo el jugador en su turno, al final de la accion llamar el turno del jugador 2
+                
+            }
         }
 
 
-        public void CritterTurn(Critter target, Critter critter, int skill)
+        public float CritterTurn(Critter target, Critter critterPlaying, int skill, float statAffected)
         {
-            if (critter.MoveSet[skill] is AtkSkill)
-            {
-                AtkSkill skillToUse = (AtkSkill)critter.MoveSet[skill];
-                skillToUse.UsingSkill(target, critter, additionalAtk);
-            }
-
-            if (critter.MoveSet[skill] is SuppSkill)
-            {
-                SuppSkill skillToUse = (SuppSkill)critter.MoveSet[skill];
-                if (skillToUse.SkillMoveLeft(skillToUse))
-                {
-                    switch (skillToUse.StatChanged)
-                    {
-                        case SuppSkill.StatBuffed.atk:
-                            additionalAtk = skillToUse.UsingSkill(critter, skillToUse.StatChanged);
-                            break;
-                        case SuppSkill.StatBuffed.def:
-                            additionalDef = skillToUse.UsingSkill(critter, skillToUse.StatChanged);
-                            break;
-                        case SuppSkill.StatBuffed.spd:
-                            spdDown = skillToUse.UsingSkill(target, skillToUse.StatChanged);
-                            break;
-                    }
-                }
-            }
-
+            statAffected = critterPlaying.ThrowSkill(target,critterPlaying,additionalAtk1,critterPlaying.MoveSet[skill], statAffected);
+            return statAffected;
         }
 
 
-
-
-
-        public Critter Turn1(Player player1, Player player2)
+        public List<Player> Turn1(Player player1, Player player2)
         {
             Critter firstCritterPlayer1 = player1.CritterTeam.Peek();
             Critter firstCritterPlayer2 = player2.CritterTeam.Peek();
+            List<Player> playerOrder = new List<Player>();
 
             if (firstCritterPlayer1.BaseSpeed == Math.Max(firstCritterPlayer1.BaseSpeed, firstCritterPlayer2.BaseSpeed))
             {
-                return firstCritterPlayer1;
+                playerOrder.Add(player1);
+                return playerOrder;
             }
             else
-                return firstCritterPlayer2;
-
-            return null;
+                playerOrder.Add(player2);
+                return playerOrder;
         }
 
 

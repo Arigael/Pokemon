@@ -78,7 +78,31 @@ namespace pokemon
             BaseSpeed = baseSpeed;
             HP = hp;
             MoveSet = moveSet;
-
         }
+
+
+        //devuelve siempre el valor resultado de lanzar una skill, en el caso de un atk devolvera el valor del daño que inflingira ese atk, en el caso de una skill supp
+        //devolvera el valor a sumar en caso de aumentar el atk o defensa, si es para disminuir el spd devolvera el valor a reducir.
+        public float ThrowSkill(Critter target, Critter caster, float additionalAtk, Skill skillToUse, float skillValueResult)
+        {
+            if (target != null && caster != null)
+            {
+                if (skillToUse is AtkSkill)
+                {
+                    AtkSkill atkSkill = (AtkSkill)skillToUse;
+                    skillValueResult = atkSkill.UsingSkill(target,caster,additionalAtk);
+                    return skillValueResult;
+                }
+                else if (skillToUse is SuppSkill)
+                {
+                    SuppSkill suppSkill = (SuppSkill)skillToUse;
+                    skillValueResult =  suppSkill.UsingSkill(target, suppSkill.StatChanged);
+                    return skillValueResult;
+                }
+            }
+
+            return skillValueResult;
+        }
+
     }
 }

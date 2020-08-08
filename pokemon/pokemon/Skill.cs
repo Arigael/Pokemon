@@ -22,9 +22,9 @@ namespace pokemon
             Light
         }
         
-        private Affinity affinityType;
+        private Affinity affinitySkillType;
 
-        public Affinity AffinityType { get; protected set; }
+        public Affinity AffinitySkillType { get; protected set; }
 
 
 
